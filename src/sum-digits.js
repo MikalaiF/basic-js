@@ -17,7 +17,7 @@ function getSumOfDigits(n) {
       return n;
    } else {
       let sum = String(n).split('');
-      console.log(sum)
+      console.log(sum);
       let map = sum.map(Number).reduce((a, b) => a + b);
       return getSumOfDigits(map)
    }
